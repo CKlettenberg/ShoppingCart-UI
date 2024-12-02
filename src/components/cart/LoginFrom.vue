@@ -28,7 +28,7 @@ export default {
   methods: {
     async handleLogin() {
       try {
-        const response = await fetch('http://localhost:8090/login', {
+        const response = await fetch('http://localhost:8090login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
