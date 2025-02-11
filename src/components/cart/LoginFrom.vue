@@ -43,10 +43,10 @@ export default {
         const data = await response.json();
         console.log('Login successful:', data);
 
-        // Emit a successful login event to the parent component
+       
         this.$emit('login-success');
 
-        // Optionally store the token in localStorage or sessionStorage
+        
         localStorage.setItem('token', data.token);
       } catch (error) {
         this.errorMessage = error.message;
