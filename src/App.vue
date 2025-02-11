@@ -20,14 +20,13 @@ export default {
   },
   data() {
     return {
-      isLoggedIn: false // Initial state is not logged in
+      isLoggedIn: false 
     };
   },
   methods: {
     handleLoginSuccess() {
       this.isLoggedIn = true;
 
-      // Redirect to the home page
       this.$router.push('/');
     }
   }
