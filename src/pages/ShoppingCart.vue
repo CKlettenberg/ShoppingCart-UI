@@ -2,13 +2,13 @@
   <div class="container mt-4">
     <h1 class="text-center mb-4">Shopping Cart</h1>
 
-    <!-- Add Product Form -->
+    
     <AddProductForm @add-product="addProduct"/>
 
-    <!-- Cart Table -->
+    
     <CartTable :items="cartItems" @remove-product="removeProduct"/>
 
-    <!-- Cart Summary -->
+    
     <CartSummary :total="cartTotal"/>
 
   </div>
